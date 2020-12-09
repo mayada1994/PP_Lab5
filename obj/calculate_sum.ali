@@ -1,0 +1,93 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV PURE_BARRIERS
+RV NO_IO
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_TASKING
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_TASK_ENTRIES=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U calculate_sum%b	calculate_sum.adb	f37a7b34 NE OO SU GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W calculate_sum%s	calculate_sum.adb	calculate_sum.ali
+
+U calculate_sum%s	calculate_sum.ads	38addda8 BN EE NE OO GE
+
+D ada.ads		20200228061810 76789da1 ada%s
+D a-except.ads		20200228061810 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200228061810 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200228061810 119b8fb3 ada.streams%s
+D a-tags.ads		20200228061810 edddc8f0 ada.tags%s
+D a-textio.ads		20200228061810 aef4d56d ada.text_io%s
+D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+D calculate_sum.ads	20201125224640 38addda8 calculate_sum%s
+D calculate_sum.adb	20201209201618 5d8eae59 calculate_sum%b
+D interfac.ads		20200228061810 5ab55268 interfaces%s
+D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
+D system.ads		20200228061810 32a08138 system%s
+D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+D s-ficobl.ads		20200228061810 078245e4 system.file_control_block%s
+D s-parame.ads		20200228061810 4752c4cb system.parameters%s
+D s-secsta.ads		20200327060540 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200228061810 a7318a92 system.soft_links%s
+D s-stache.ads		20200228061810 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200228061810 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200228061810 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200228061810 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200319060540 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200228061810 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [calculate_sum standard 4 10 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|1r6 3r5
+X 6 a-textio.ads
+57K13*Text_IO 727e16 9|1w10 3r9
+465U14*Put 9|56s7 56s22 56s39 56s49 56s65 87s4
+508U14*Put_Line 9|56s88
+X 8 calculate_sum.ads
+2A9 CustomArray(long_integer)<integer> 5r18 9|6r18
+4v10*Calculate_Sum 5>4 6>4 9|1w19 5b10 89l5 89t18
+5*4 NumArray{2A9} 9|6b4 63r23 69r37 73r24
+6i4 Tasks{integer} 9|7b4 33r37 69r55 70r31
+X 9 calculate_sum.adb
+9V13 PartialSum{long_integer} 9>25 9>32 52s14 59b13 67l8 67t18
+9i25 First{integer} 59b25 62r16
+9i32 Last{integer} 59b32 62r25
+11w14 Server 21b19 37l8 37t14 54r7 85r4 86r17
+12U17 SetSum 12>24 22b17 26l11 26t17 54s14
+12i24 Current{long_integer} 22b24 24r23
+13V16 GetSum{long_integer} 28b16 31l11 31t17 86s24
+14Y13 Wait 33b13 36l11 36t15 85s11
+17i7 Sum{long_integer} 24m10 24r17 30r17
+18i7 TaskCounter{integer} 25m10 25r25 33r23
+39T14 SumCalculator 41e7 43b14 48m10 49m10 57l8 57t21 70r45
+40Y13 Start 40>20 40>27 47b14 50l11 50t16 81s24
+40i20 First{integer} 48r33 81r31
+40i27 Last{integer} 49r33 81r47
+44i7 First{integer} 48m24 52r26 56r26
+44i14 Last{integer} 49m24 52r33 56r53
+45i7 Sum{long_integer} 52m7 54r21 56r97
+47i21 First{integer}
+47i28 Last{integer}
+60i7 Sum{long_integer} 63m10 63r17 66r14
+62i11 i{integer} 63r33
+69i4 Sub_Length{integer} 80r23
+70a4 SumCalcTasks(39T14) 79r13 81r7
+73i4 Index{integer} 80r15 81r40 82m7
+74i4 Next{integer} 80m7 81r55 82r16
+75i4 Sum{long_integer} 86m4 86r11 88r11
+79i8 i{integer} 81r21
+
